@@ -39,9 +39,9 @@ const zucchine = [
         lunghezza: 7,
         peso: 8
     },
-    {
+    { 
         varietà: 'triestina',
-        lunghezza: 12,
+        lunghezza: 17,
         peso: 2
     },
     {
@@ -65,3 +65,12 @@ const longsZucc = zucchine.filter(zucchina => {
 });
 
 console.log(longsZucc);
+
+
+const smallZucc = zucchine.filter(zucchina => {
+    if(zucchina.lunghezza < 15) {
+        return true
+    }
+});
+
+console.log(smallZucc);
